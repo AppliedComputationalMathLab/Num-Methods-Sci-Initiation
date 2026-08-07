@@ -44,39 +44,25 @@
 \maketitle
 
 \frontmatter
-%\include{Preliminar/Dedicatória}%OPCIONAL
-\include{Preliminar/Agradecimentos}%OPCIONAL
+\include{Preliminar/Agradecimentos}
 \include{Preliminar/Resumo}
-\include{Preliminar/Abstract}%OPCIONAL
+\include{Preliminar/Abstract}
 
 \tableofcontents
 
 \pagenumbering{roman}
-\include{Preliminar/Introdução}
-
 \mainmatter
 
-%%%%%%%%%%%%%%%%   Inserir capítulos   %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\include{Preliminar/Introdução}
 \include{Capitulos/FloatingPoints}
 \include{Capitulos/IterMet}
 \include{Capitulos/PvisEdo}
 \include{Capitulos/CompParadig}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
-% Example citation to ensure at least one \citation command
-\chapter*{Referências Citadas}
-Como exemplo, citamos \cite{ruggiero1998calculo}.
 
 \backmatter
-% Bibliography
-\bibliographystyle{plain} % or another style like abnt, alpha, etc.
-\bibliography{Capitulos/ref} % adjust path/filename as needed
 
-% For BibTeX compatibility (if needed by your toolchain)
-% \bibdata{Capitulos/ref}
-% \bibstyle{plain}
+\nocite{*}
 
-%\include{Capitulos/Referências}%NO ARQUIVO ref.bib TEM EXEMPLOS DE COMO COLOCAR REFERÊNCIAS.
-
+\bibliographystyle{plain}
+\bibliography{Capitulos/ref}
 \end{document}
