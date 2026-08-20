@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{kahan2004}
+William Kahan.
+\newblock A logarithm too clever by half.
+\newblock {\em Unpublished note}, 2004.
+
+\bibitem{muller2005}
+Jean-Michel Muller.
+\newblock On the definition of ulp(x).
+\newblock {\em CNRS -- Laboratoire LIP, projet Arenaire}, 2005.
+
+\bibitem{ruggiero1998calculo}
+M{\'a}rcia Aparecida~Gomes Ruggiero and Vera~L{\'u}cia da~Rocha~Lopes.
+\newblock {\em C{\'a}lculo num{\'e}rico: aspectos te{\'o}ricos e
+  computacionais}.
+\newblock Pearson/Makron, Sao Paulo, 1998.
+
+\bibitem{IEEE754}
+IEEE~Computer Society.
+\newblock {\em IEEE Standard for Floating-Point Arithmetic}, 2019.
+
+\end{thebibliography}

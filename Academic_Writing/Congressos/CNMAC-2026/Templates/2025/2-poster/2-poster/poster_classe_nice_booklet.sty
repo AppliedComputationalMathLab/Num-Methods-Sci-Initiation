@@ -1,0 +1,63 @@
+%----------------------------------------------------------------------------------------
+
+\usepackage[portuguese]{babel}%Formata as entradas para PT-BR
+
+\usepackage[utf8]{inputenc}
+
+%\usepackage{verbatim}
+
+\usepackage[document]{ragged2e}
+
+\usepackage{multicol} % This is so we can have multiple columns of text side-by-side
+
+\columnsep=100pt % This is the amount of white space between the columns in the poster
+
+\columnseprule=3pt % This is the thickness of the black line between the columns in the poster
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+\usepackage{times} % Use the times font
+
+%\usepackage{palatino} % Uncomment to use the Palatino font
+%\usepackage{varioref}
+%\usepackage{hyperref}
+%\usepackage{epsfig}
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{./figs/}} % Location of the graphics files
+
+\usepackage{booktabs} % Top and bottom rules for table
+
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\captionsetup{justification=centering,margin=2cm}
+
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+
+\usepackage{mathrsfs}
+
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+
+\usepackage{setspace}
+
+\usepackage{qrcode}
+\usepackage{adjustbox}
+
+\setlength{\fboxsep}{0pt}
+
+%----------------------------------------------------------------------------------------
+
+\usepackage[backend=biber, style=numeric-comp, maxnames=50]{biblatex}
+\addbibresource{refs.bib}
+
+\DeclareTextFontCommand{\emph}{\boldmath\bfseries}
+
+\DefineBibliographyStrings{brazil}{phdthesis = {Tese de doutorado}}
+\DefineBibliographyStrings{brazil}{mathesis  = {Dissertalção de mestrado}}
+\DefineBibliographyStrings{english}{mathesis = {Master dissertation}}
+
+\setlength\bibitemsep{0pt}
+
+\AtBeginBibliography{\small\raggedright}
+
+%----------------------------------------------------------------------------------------
+

@@ -1,0 +1,203 @@
+%----------------------------------------------------------------------------------------
+\documentclass[a0,portrait]{a0poster}
+
+\usepackage{poster_classe_nice_booklet}
+
+\begin{document}
+
+\onehalfspacing
+
+%----------------------------------------------------------------------------------------
+%	POSTER HEADER
+%----------------------------------------------------------------------------------------
+
+\vspace*{-7cm}
+\begin{figure}[!htb]
+   \begin{minipage}{0.65\textwidth}
+     \includegraphics[width=.85\linewidth]{LogoCNMAC2025}
+   \end{minipage}\hfill
+   \begin{minipage}{0.40\textwidth}
+	 \hspace{12cm}
+     \includegraphics[width=.4\linewidth]{Logo_CEFET-MG}
+   \end{minipage}
+\end{figure}
+
+\vspace{3mm}
+\begin{minipage}[b]{1.0\linewidth} %default 0.75
+\begin{center}
+\Huge \textbf{Classe \LaTeX{} para Criação de e-Books para o PROFMAT}\\
+\huge \textbf{Luis Alberto D'Afonseca}    \\[2mm]
+\huge CEFET-MG, MG, Brasil                \\[2mm]
+\Large \texttt{luis.dafonseca@cefetmg.br}
+\end{center}
+\end{minipage}
+%
+\vspace{-7mm}
+
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2}
+\raggedbottom
+
+\justify
+
+\begin{center}
+  \centering
+  \fbox{\includegraphics[width=0.875\linewidth]{NiceBooklet_Manual-capa}}%
+  \hspace{-103mm}%
+  \adjustbox{raise=405mm}{\fcolorbox{white}{white}{%
+      \qrcode[height=100mm]{https://material-didatico.github.io/pages/booklet}}}
+  \captionof{figure}{{
+      Capa do manual, exemplo de uso, da classe \texttt{NiceBooklet}. \setlength\bibitemsep{0pt}
+      Fonte: o próprio autor.
+  }}
+  \label{fig:capa}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+\vspace{-10mm}
+\section*{Resumo}
+\vspace{-10mm}
+
+Apresentação de uma classe \LaTeX{} destinada a facilitar o desenvolvimento de
+\textit{e-books} por alunos do PROFMAT.
+O \LaTeX{} é a principal ferramenta para escrever textos matemáticos,
+mas apresenta grandes desafios para iniciantes.
+A classe criada esconde uma parte significativa da complexidade,
+incluindo os principais pacotes matemáticos, para escrever em português e
+inserir imagens, além de definir a formatação.
+Além disso, a classe automatiza diversas tarefas, por exemplo, transferir as
+respostas dos exercícios para um capítulo específico no final do texto.
+
+\vspace{5mm}
+\noindent
+\textbf{Palavras-Chave:}
+acessibilidade digital;
+ensino;
+material didático;
+produção acadêmica.
+
+%----------------------------------------------------------------------------------------
+\vspace{-10mm}
+\section*{A Classe \texttt{NiceBooket}}
+\vspace{-5mm}
+
+\noindent
+\LaTeX{} é a ferramenta mais utilizada para escrever
+textos matemáticos, devido, entre outros fatores, à sua qualidade tipográfica e
+separação entre conteúdo e formatação.
+Porém, ela é bastante intimidadora para principiantes.
+
+\hspace{-5.5mm}%
+\begin{minipage}[b]{0.55\linewidth}
+
+  \justify
+
+  \noindent
+  Essa dificuldade se tornou especialmente evidente na orientação de
+  dissertações para o PROFMAT, onde os mestrandos precisam atuar como
+  professores de matemática durante a realização do curso.
+  Desejando facilitar a criação de apostilas e que elas fossem
+  visualmente atraentes para os alunos do Ensino Básico,
+  desenvolvi a classe \LaTeX{} \texttt{NiceBooklet}.
+  \vspace{13mm}
+
+  \noindent
+  Características gráficas:
+  \begin{itemize}
+    \setlength\itemsep{0em}
+    \item Destaque de resultados importantes,
+          Figs \ref{fig:pagina_teorema} e \ref{fig:pagina_exemplo}
+
+    \item Fontes grandes (14pt) para facilitar a leitura em formato digital
+
+    \item Formatação da capa a partir de uma imagem;
+
+    \item Criação de \textit{links} de navegação em cada página;
+
+    \item Deslocamento das respostas dos exercícios;
+
+    \item Criação de \textit{links} com QR code;
+
+    \item Criação de um índice remissivo.
+  \end{itemize}
+
+  \vspace{-10mm}
+  \section*{Resultados}
+
+  {
+  Estas são algumas dissertações que criaram apostilas utilizando a classe:
+  Gomes criou um material abordando a Matemática dos
+  investimentos financeiros
+  \cite{ANDERSON_LUIS_DE_AVILA_GOMES:CEFET:2024};
+  %
+  Vieira escreveu uma apostila para apresentar o conceito de
+  infinito para alunos do Ensino Médio
+  \cite{PIERRE_FERMAT_VIEIRA:CEFET:2023};
+  %
+  de Jesus desenvolveu uma apostila sobre a aplicação da
+  Matemática no cálculo de materiais na Construção Civil
+  \cite{VILMAR_PEREIRA_DE_JESUS:CEFET:2022};
+  %
+  \unskip\parfillskip 0pt \par
+  }
+\end{minipage}%
+\hfill%
+\begin{minipage}[b]{0.39\linewidth}
+\begin{center}
+  \fbox{\includegraphics[width=\linewidth]{Pagina_exemplo_1}}
+  \captionof{figure}{
+    Um teorema e sua demonstração.
+    Fonte: Vieira \cite{PIERRE_FERMAT_VIEIRA:CEFET:2023}.
+  }
+  \label{fig:pagina_teorema}
+  \vspace{2mm}
+
+  \fbox{\includegraphics[width=\linewidth]{Pagina_exemplo_2}}
+  \captionof{figure}{
+    Uma definição e um exemplo.
+    Fonte: Reis \cite{TAMISSON_SANTOS_REIS:CEFET:2022}.
+  }
+  \label{fig:pagina_exemplo}
+\end{center}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\vspace{3mm}
+\noindent
+%
+Reis criou um jogo de RPG (Role-Playing Game) para ser
+usado como ferramenta para o ensino de probabilidades
+\cite{TAMISSON_SANTOS_REIS:CEFET:2022};
+%
+Santos escreveu uma apostila para o ensino de noções de
+programação e métodos numéricos para o Ensino Médio
+\cite{Edson:CEFET:2024}.
+
+%-------------------------------------------------------------------------------
+\vspace{-15mm}
+\section*{Agradecimentos}
+\vspace{-10mm}
+
+\noindent
+O autor agradece ao CEFET-MG e à FAPEMIG
+pelo apoio financeiro (Chamada FAPEMIG 16/2024, Processo PCE-00114-25).
+
+%-------------------------------------------------------------------------------
+\vspace{-10mm}
+\printbibliography
+
+\end{multicols}
+%-------------------------------------------------------------------------------
+
+\vfill
+\begin{center}%
+  \fbox{\includegraphics[width=0.19\textwidth]{capa_civil}}\hspace{-53mm}\adjustbox{raise=179mm}{\fcolorbox{white}{white}{\qrcode[height=50mm]{https://material-didatico.github.io/pages/civil}}}\hspace{45mm}%
+  \fbox{\includegraphics[width=0.19\textwidth]{capa_infinito}}\hspace{-53mm}\adjustbox{raise=179mm}{\fcolorbox{white}{white}{\qrcode[height=50mm]{https://material-didatico.github.io/pages/infinito}}}\hspace{45mm}%
+  \fbox{\includegraphics[width=0.19\textwidth]{capa_met_num}}\hspace{-53mm}\adjustbox{raise=179mm}{\fcolorbox{white}{white}{\qrcode[height=50mm]{https://material-didatico.github.io/pages/met_num_medio}}}\hspace{45mm}%
+  \fbox{\includegraphics[width=0.19\textwidth]{capa_zipmath}}\hspace{-53mm}\adjustbox{raise=179mm}{\fcolorbox{white}{white}{\qrcode[height=50mm]{https://material-didatico.github.io/pages/zip_math}}}
+\end{center}
+
+\end{document}
+%-------------------------------------------------------------------------------

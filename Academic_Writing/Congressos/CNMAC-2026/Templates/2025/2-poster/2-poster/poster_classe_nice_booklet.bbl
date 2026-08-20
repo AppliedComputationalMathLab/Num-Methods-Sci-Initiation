@@ -1,0 +1,164 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{ANDERSON_LUIS_DE_AVILA_GOMES:CEFET:2024}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=b74eeafb37a83f65b19ac8815f88e696}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={A.\bibnamedelimi L.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CEFET-MG}%
+      }
+      \strng{namehash}{b74eeafb37a83f65b19ac8815f88e696}
+      \strng{fullhash}{b74eeafb37a83f65b19ac8815f88e696}
+      \strng{fullhashraw}{b74eeafb37a83f65b19ac8815f88e696}
+      \strng{bibnamehash}{b74eeafb37a83f65b19ac8815f88e696}
+      \strng{authorbibnamehash}{b74eeafb37a83f65b19ac8815f88e696}
+      \strng{authornamehash}{b74eeafb37a83f65b19ac8815f88e696}
+      \strng{authorfullhash}{b74eeafb37a83f65b19ac8815f88e696}
+      \strng{authorfullhashraw}{b74eeafb37a83f65b19ac8815f88e696}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Explorando as Fórmulas no Mercado Financeiro: Uma Abordagem Matemática nos Investimentos para Sala de Aula}
+      \field{type}{mathesis}
+      \field{year}{2024}
+    \endentry
+    \entry{VILMAR_PEREIRA_DE_JESUS:CEFET:2022}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=7c4f2b0edd54c5bfc3afb44b70a46c1b}{%
+           family={Jesus},
+           familyi={J\bibinitperiod},
+           given={V.\bibnamedelimi P.},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CEFET-MG}%
+      }
+      \strng{namehash}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \strng{fullhash}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \strng{fullhashraw}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \strng{bibnamehash}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \strng{authorbibnamehash}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \strng{authornamehash}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \strng{authorfullhash}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \strng{authorfullhashraw}{7c4f2b0edd54c5bfc3afb44b70a46c1b}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Apostila sobre a Matemática na construção civil com o uso do Sweet Home 3D}}
+      \field{type}{mathesis}
+      \field{year}{2022}
+    \endentry
+    \entry{TAMISSON_SANTOS_REIS:CEFET:2022}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=053c03181fc05ea47f85363a6f0ca629}{%
+           family={Reis},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           suffix={T},
+           suffixi={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CEFET-MG}%
+      }
+      \strng{namehash}{053c03181fc05ea47f85363a6f0ca629}
+      \strng{fullhash}{053c03181fc05ea47f85363a6f0ca629}
+      \strng{fullhashraw}{053c03181fc05ea47f85363a6f0ca629}
+      \strng{bibnamehash}{053c03181fc05ea47f85363a6f0ca629}
+      \strng{authorbibnamehash}{053c03181fc05ea47f85363a6f0ca629}
+      \strng{authornamehash}{053c03181fc05ea47f85363a6f0ca629}
+      \strng{authorfullhash}{053c03181fc05ea47f85363a6f0ca629}
+      \strng{authorfullhashraw}{053c03181fc05ea47f85363a6f0ca629}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Criação de um sistema de RPG como ferramenta para o ensino de probabilidade}
+      \field{type}{mathesis}
+      \field{year}{2022}
+    \endentry
+    \entry{Edson:CEFET:2024}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=f2e526f3446a25ede34dfd5ec3fb6bb1}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi B.\bibnamedelimi L.},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CEFET-MG}%
+      }
+      \strng{namehash}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \strng{fullhash}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \strng{fullhashraw}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \strng{bibnamehash}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \strng{authorbibnamehash}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \strng{authornamehash}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \strng{authorfullhash}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \strng{authorfullhashraw}{f2e526f3446a25ede34dfd5ec3fb6bb1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elaboração de uma apostila sobre programação e métodos numéricos para o ensino médio}
+      \field{type}{mathesis}
+      \field{year}{2024}
+    \endentry
+    \entry{PIERRE_FERMAT_VIEIRA:CEFET:2023}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=047825dca2e79d3bd196037117147683}{%
+           family={Vieira},
+           familyi={V\bibinitperiod},
+           given={P.\bibnamedelimi S.\bibnamedelimi F.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CEFET-MG}%
+      }
+      \strng{namehash}{047825dca2e79d3bd196037117147683}
+      \strng{fullhash}{047825dca2e79d3bd196037117147683}
+      \strng{fullhashraw}{047825dca2e79d3bd196037117147683}
+      \strng{bibnamehash}{047825dca2e79d3bd196037117147683}
+      \strng{authorbibnamehash}{047825dca2e79d3bd196037117147683}
+      \strng{authornamehash}{047825dca2e79d3bd196037117147683}
+      \strng{authorfullhash}{047825dca2e79d3bd196037117147683}
+      \strng{authorfullhashraw}{047825dca2e79d3bd196037117147683}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elaboração de uma apostila para apresentar o infinito no ensino médio}
+      \field{type}{mathesis}
+      \field{year}{2023}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
