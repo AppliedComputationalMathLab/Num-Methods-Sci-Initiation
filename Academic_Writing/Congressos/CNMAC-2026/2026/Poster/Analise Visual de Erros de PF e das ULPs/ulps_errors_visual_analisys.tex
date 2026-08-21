@@ -100,11 +100,15 @@
   \vspace{-1cm}
   % O RESUMO deve ser claro, sucinto e explicar o(s) objetivo(s) pretendido(s), procurando justificar sua import\^ancia, os principais procedimentos adotados, os resultados mais expressivos e conclus\~oes. Se recomenda que o RESUMO n\~ao contenha f\'ormulas, cita\c c\~oes e/ou refer\^encias bibliogr\'aficas.
 
-  Este trabalho apresenta resultados de estudos realizados em um projeto de
-  iniciação científica e tem como objetivo explorar graficamente alguns efeitos
-  do cálculos realizados com ponto flutuante e das Unidades de Última Posição
-  (ULP's). Para implementação dos códigos, e geração de gráficos, foi utilizado a
-  linguagem Python, assim como suas diversas bibliotecas.
+  Este trabalho investiga, por meio de experimentos computacionais, os efeitos da
+  representação em ponto flutuante e das \textit{Units in the Last Place}
+  (ULP's). Foram analisadas funções matematicamente exatas cuja avaliação em
+  aritmética de ponto flutuante produz erros de arredondamento, com ênfase nos
+  efeitos associados à escala dos números representados e à resolução finita do
+  sistema. Os experimentos foram implementados em Python e utilizados para gerar
+  representações gráficas dos fenômenos observados. Os resultados evidenciam a
+  influência da ULP na perda de significância e na alteração do comportamento
+  numérico das funções avaliadas.
 
   \vspace{1cm}
 
@@ -124,37 +128,21 @@
   % A introdu\c c\~ao tem como objetivo posicionar o leitor dentro do tema que est\'a sendo desenvolvido. Deve conter a delimita\c c\~ao do universo da pesquisa, problema, objetivos, justificativa, hip\'oteses, metodologia de trabalho e sua relev\^ancia. Evitar o uso de palavras e ideias repetidas. Seja objetivo e preciso em suas considera\c c\~oes, evitando que a introdu\c c\~ao do trabalho fique longa e cansativa.
 
   Frequentemente, computadores são utilizados para realizar cálculos numéricos
-  repetitivos e de grande complexidade. Mesmo assim, computadores possuem uma
-  limitação física para representar números reais.
+  repetitivos e de grande complexidade. Apesar disso, a representação
+  computacional de números reais é limitada pela quantidade finita de bits
+  disponível, fazendo com que operações aritméticas estejam sujeitas a erros de
+  arredondamento. Essa limitação torna-se particularmente relevante à medida que
+  a magnitude dos números aumenta, pois o espaçamento entre valores
+  representáveis, ou \textit{Unit in the Last Place} (ULP), também aumenta.
 
-  Um erro comum em SPF's é o da perda de significância, ou cancelamento
-  catastrófico, que ocorre quando é realizada uma operação com dois números muito
-  próximos ou de grandezas muito diferentes, resultando em um valor com menos
-  dígitos significativos do que os números originais, devido ao alinhamento de
-  mantissa. Um exemplo desse comportamento é observado na função $f(x) = x^{23} +
-    1 - x^{23}$, que é igual a $1$. Porém, ao avaliar $f$ usando ponto flutuante,
-  obtemos o gráfico da Figura~\ref{fig:erros1}, em que o valor correto é exibido
-  apenas até $x$ próximo de $4,9$. A partir de aproximadamente $x = 5,1$, a
-  função assume o valor zero. Isso ocorre, pois o valor $x^{23}$ é muito maior
-  que $1$, o que resulta na perda de significância, produzindo $x^{23} + 1 =
-    x^{23}$.
+  Neste trabalho, busca-se analisar experimentalmente a influência da
+  representação em ponto flutuante e da ULP sobre o comportamento numérico de
+  funções, investigando a relação entre a magnitude dos valores representados, os
+  erros de arredondamento e a perda de significância. Para isso, são realizadas
+  simulações computacionais e representações gráficas que permitem identificar e
+  visualizar as regiões em que a aritmética de ponto flutuante produz resultados
+  diferentes dos esperados pela aritmética exata.
 
-  Entre $4,9$ e $5,1$ observamos a ocorrência de uma oscilação caótica
-  relacionada com o valor da $\ulp(x^{23})$, que é 2. Para realizar a soma
-  $x^{23} + 1$, o SPF precisa representar os dois números na mesma potência.
-  Porém, o valor do expoente necessário para representar $x^{23}$ está associado
-  à uma ULP igual a 2, em que o número 1 não pode ser representado e precisa ser
-  arredondado. Esse arredondamento faz com que $x^{23} + 1$ seja igual a $x^{23}$
-  ou $x^{23} + 2$, produzindo a oscilação observada.
-
-  \begin{figure}[H]
-    \centering
-    \includegraphics[width=.8\linewidth]{figs/erro1}
-    \vspace{-.5cm}
-    \caption{ {\small Resultado da avaliação da função $f(x) = x^{23} +
-            1 - x^{23}$ num SPF IEEE de 64 \text{bits}. Fonte: Autor.}}
-    \label{fig:erros1}
-  \end{figure}
   %\end{abstract}
 
   %----------------------------------------------------------------------------------------
@@ -164,9 +152,9 @@
   %\color{Navy} % Navy color for the abstract
 
   %\begin{Objetivos}
-  \section*{Objetivos}
-  \vspace{-1cm}
-  O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo tamb\'em sua finalidade. Os objetivos espec\'i­ficos ir\~ao dar uma maior delimita\c c\~ao ao tema, al\'em de detalhar os processos necess\'arios para a realiza\c c\~ao do trabalho.
+  % \section*{Objetivos}
+  % \vspace{-1cm}
+  % O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo tamb\'em sua finalidade. Os objetivos espec\'i­ficos ir\~ao dar uma maior delimita\c c\~ao ao tema, al\'em de detalhar os processos necess\'arios para a realiza\c c\~ao do trabalho.
 
   %\end{Objetivos}
 
@@ -200,8 +188,8 @@
   IEEE-754~\cite{IEEE754}.
 
   Devido à natureza discreta e finita dos SPF's, erros de representação são
-  intrínsecos e propagam-se em operações aritméticas sucessivas, se acumulando e
-  podendo comprometer severamente a exatidão numérica do sistema.
+  intrínsecos e propagam-se em operações aritméticas sucessivas, acumulando-se e
+  podendo comprometer severamente a exatidão numérica das operações.
 
   No padrão IEEE 754 um número de ponto flutuante é dividido em três partes. O
   primeiro bit, representa o \textbf{Sinal (S)} do número representado, indicando
@@ -222,16 +210,16 @@
 
   A \textit{Unit of Last Place (ULP)} é a menor diferença entre dois números
   representáveis em ponto flutuante, ou seja, a distância entre um número e o
-  próximo número representável~\cite{muller2005,kahan2004}. O conjunto de números
-  se torna mais esparso quanto mais distante o número for de zero, aumentando o
-  erro relativo. Dessa forma, a ULP se torna uma medida relativa importante para
-  avaliar a precisão dos cálculos realizados com ponto flutuante, podendo ser
-  calculada como
+  próximo número representável~\cite{kahan2004,muller2005}. O conjunto de números
+  exatamente representáveis se torna mais esparso quanto mais distante o número
+  for de zero, aumentando o erro relativo. Dessa forma, a ULP se torna uma medida
+  relativa importante para avaliar a precisão dos cálculos realizados com ponto
+  flutuante, podendo ser calculada como
   \begin{equation}
     \ulp(x) = 2^{p - t + 1},
     \label{eq:ulp}
   \end{equation}
-  em que $p$ é o expoente do número representado em ponto flutuante e $t$ é o número de bits da mantissa. A Figura~\ref{fig:ulp} mostra o gráfico da função $\ulp(x^{23})$ num SPF IEEE de 64 \text{bits}.
+  em que $p$ é o expoente do número representado em ponto flutuante e $t$ é o número de bits da mantissa.
 
   \begin{figure}[h]
     \centering
@@ -253,24 +241,62 @@
   %\end{center}
   %\begin{justify}
   %\setlength{\parindent}{5ex} \indent \par
-  \vspace{-1cm}
-  Descrever adequadamente o desenvolvimento e a metodologia utilizada para desenvolver o trabalho. Deve ser pertinente ao tema, procurando alcan\c car os objetivos j\'a apresentados.\\
-  Caso use equa\c c\~oes, numerar descrevendo os par\^ametros.\\
-  Figuras, tabelas e gr\'aficos devem ser apresentados com tamanho, qualidade e detalhes suficientes para a interpreta\c c\~ao e composi\c c\~ao gr\'afica final.
-  Citar a fonte da ilustra\c c\~ao, tabela e gr\'afico e, caso seja do pr\'oprio autor, citar como ``Fonte: Elaborada pelo autor''.
-  As legendas e fontes das figuras, tabelas e gr\'aficos devem ser escritos em fonte Times New Roman, tamanho 10 e o texto deve estar centralizado, em negrito e seguir o padr\~ao de numera\c c\~ao sucessivo ar\'abico. Centralizar as Figuras, Tabelas e Gr\'aficos.
-  \textbf{Gr\'aficos e figuras:} devem apresentar-se sem bordas; a legenda deve ser posicionada logo abaixo da figura ou gr\'afico. Usar imagens coloridas se for necess\'ario destacar alguma informa\c c\~ao da Figura ou Gr\'afico.
+  % \vspace{-1cm}
+  % Descrever adequadamente o desenvolvimento e a metodologia utilizada para desenvolver o trabalho. Deve ser pertinente ao tema, procurando alcan\c car os objetivos j\'a apresentados.\\
+  % Caso use equa\c c\~oes, numerar descrevendo os par\^ametros.\\
+  % Figuras, tabelas e gr\'aficos devem ser apresentados com tamanho, qualidade e detalhes suficientes para a interpreta\c c\~ao e composi\c c\~ao gr\'afica final.
+  % Citar a fonte da ilustra\c c\~ao, tabela e gr\'afico e, caso seja do pr\'oprio autor, citar como ``Fonte: Elaborada pelo autor''.
+  % As legendas e fontes das figuras, tabelas e gr\'aficos devem ser escritos em fonte Times New Roman, tamanho 10 e o texto deve estar centralizado, em negrito e seguir o padr\~ao de numera\c c\~ao sucessivo ar\'abico. Centralizar as Figuras, Tabelas e Gr\'aficos.
+  % \textbf{Gr\'aficos e figuras:} devem apresentar-se sem bordas; a legenda deve ser posicionada logo abaixo da figura ou gr\'afico. Usar imagens coloridas se for necess\'ario destacar alguma informa\c c\~ao da Figura ou Gr\'afico.
 
-  \textbf{Tabelas:} evitar tabelas extensas e dados sup\'erfluos; adequar seus tamanhos ao espa\c co \'util do papel e colocar, na medida do poss\'i­vel, apenas linhas cont\'i­nuas horizontais. As legendas devem ser autoexplicativas, localizadas abaixo da tabela, como no exemplo a seguir.
+  % \textbf{Tabelas:} evitar tabelas extensas e dados sup\'erfluos; adequar seus tamanhos ao espa\c co \'util do papel e colocar, na medida do poss\'i­vel, apenas linhas cont\'i­nuas horizontais. As legendas devem ser autoexplicativas, localizadas abaixo da tabela, como no exemplo a seguir.
 
-  \vspace{2cm}
-  \begin{minipage}[b]{1.0\linewidth}
-    \begin{center}
-      \includegraphics[width=37cm]{figs/tabela.png}
-      \captionof{figure}{An\'alise do \'Indice de Cone (IC) nas linhas (L) e entrelinhas (E) de cana nas diferentes profundidades amostradas. Fonte: OLIVEIRA et al., 2008.}
-    \end{center}
-  \end{minipage}
-  \vspace{-1cm}
+  % \vspace{2cm}
+  % \begin{minipage}[b]{1.0\linewidth}
+  %   \begin{center}
+  %     \includegraphics[width=37cm]{figs/tabela.png}
+  %     \captionof{figure}{An\'alise do \'Indice de Cone (IC) nas linhas (L) e entrelinhas (E) de cana nas diferentes profundidades amostradas. Fonte: OLIVEIRA et al., 2008.}
+  %   \end{center}
+  % \end{minipage}
+  % \vspace{-1cm}
+
+  Para analisar o comportamento das ULP's, foram realizados experimentos
+  computacionais utilizando funções da forma $g(x) = x^{10} + \ell - x^{10}$,
+  cujo valor exato é constante e igual a $\ell$. A implementação foi realizada em
+  Python, utilizando aritmética IEEE 754 binary64 e recursos gráficos para
+  visualizar o comportamento numérico da função.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{figs/NumError1_mplt}
+    \vspace{-.5cm}
+    \caption{ {\small Resultado da avaliação da função $f(x) = x^{10} +
+            1 - x^{10}$ num SPF IEEE de 64 \text{bits}. Fonte: Autor.}}
+    \label{fig:erros1}
+  \end{figure}
+
+  Ao avaliar $f$ usando ponto flutuante, obtemos o gráfico da
+  Figura~\ref{fig:erros1}, em que o valor correto é exibido apenas até $x$
+  próximo de $4,9$. A partir de aproximadamente $x = 5,1$, a função assume o
+  valor zero. Isso ocorre, pois o valor $x^{10}$ é muito maior que $1$, o que
+  resulta na perda de significância, produzindo $x^{10} + 1 = x^{10}$.
+
+  Entre $4,9$ e $5,1$ observamos a ocorrência de uma oscilação caótica
+  relacionada com o valor da $\ulp(x^{10})$, que é 2. Para realizar a soma
+  $x^{10} + 1$, o SPF precisa representar os dois números na mesma potência.
+  Porém, o valor do expoente necessário para representar $x^{10}$ está associado
+  à uma ULP igual a 2, em que o número 1 não pode ser representado e precisa ser
+  arredondado. Esse arredondamento faz com que $x^{10} + 1$ seja igual a $x^{10}$
+  ou $x^{10} + 2$, produzindo a oscilação observada.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{figs/NumError1_mplt}
+    \vspace{-.5cm}
+    \caption{ {\small Resultado da avaliação da função $f(x) = x^{10} +
+            1 - x^{10}$ num SPF IEEE de 64 \text{bits}. Fonte: Autor.}}
+    \label{fig:erros1}
+  \end{figure}
   %\end{justify}
 
   %----------------------------------------------------------------------------------------

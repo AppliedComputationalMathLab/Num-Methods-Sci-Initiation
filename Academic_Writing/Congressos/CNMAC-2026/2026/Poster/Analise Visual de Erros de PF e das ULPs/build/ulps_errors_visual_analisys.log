@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  20 AUG 2026 10:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  21 AUG 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,7 +352,11 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 ) (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported on input line 8.
+(babel)             Reported on input line 13.
+
+
+LaTeX Warning: Label `fig:erros1' multiply defined.
+
 )
 \openout1 = `ulps_errors_visual_analisys.aux'.
 
@@ -437,42 +441,32 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 80
 (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<figs/erro1.png, id=4, 674.2791pt x 303.534pt>
-File: figs/erro1.png Graphic file (type png)
-<use figs/erro1.png>
-Package pdftex.def Info: figs/erro1.png  used on input line 152.
-(pdftex.def)             Requested size: 847.27403pt x 381.42201pt.
-
-
-LaTeX Warning: Reference `fig:ulp' on page 1 undefined on input line 234.
-
-<figs/NumError1_mplt.pdf, id=5, 664.10101pt x 296.86069pt>
+<figs/NumError1_mplt.pdf, id=4, 664.10101pt x 296.86069pt>
 File: figs/NumError1_mplt.pdf Graphic file (type pdf)
 <use figs/NumError1_mplt.pdf>
-Package pdftex.def Info: figs/NumError1_mplt.pdf  used on input line 238.
+Package pdftex.def Info: figs/NumError1_mplt.pdf  used on input line 226.
 (pdftex.def)             Requested size: 847.27403pt x 378.76187pt.
 
-Package multicol Warning: Floats and marginpars not allowed inside `multicols' environment!.
-
 
 Package multicol Warning: Floats and marginpars not allowed inside `multicols' environment!.
 
-<figs/tabela.png, id=6, 481.8pt x 73.77562pt>
-File: figs/tabela.png Graphic file (type png)
-<use figs/tabela.png>
-Package pdftex.def Info: figs/tabela.png  used on input line 269.
-(pdftex.def)             Requested size: 1052.75197pt x 161.21825pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 267--275
-[][]
- []
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' environment!.
 
-[1
+File: figs/NumError1_mplt.pdf Graphic file (type pdf)
+<use figs/NumError1_mplt.pdf>
+Package pdftex.def Info: figs/NumError1_mplt.pdf  used on input line 271.
+(pdftex.def)             Requested size: 847.27403pt x 378.76187pt.
+File: figs/NumError1_mplt.pdf Graphic file (type pdf)
+<use figs/NumError1_mplt.pdf>
+Package pdftex.def Info: figs/NumError1_mplt.pdf  used on input line 294.
+(pdftex.def)             Requested size: 847.27403pt x 378.76187pt.
+(f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.bbl [1
 
 
 Non-PDF special ignored!
 <special> papersize=83.96cm,118.82cm
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./figs/LogoCNMAC2025.png> <./figs/Logo_CEFET-MG.png> <./figs/erro1.png> <./figs/tabela.png>] (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.bbl) [2] (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.aux)
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./figs/LogoCNMAC2025.png> <./figs/Logo_CEFET-MG.png> <./figs/NumError1_mplt.pdf>]) [2] (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -483,21 +477,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 26.72pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6672 strings out of 467870
- 117304 string characters out of 5418355
- 563400 words of memory out of 5000000
- 35450 multiletter control sequences out of 15000+600000
+ 6654 strings out of 467870
+ 116966 string characters out of 5418355
+ 562439 words of memory out of 5000000
+ 35432 multiletter control sequences out of 15000+600000
  658024 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,84p,718b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,84p,718b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.pdf" (2 pages, 473048 bytes).
+Output written on "f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.pdf" (2 pages, 285005 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
