@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{angel2016survey}
+Allen~R. Angel, Christine~D. Abbott, and Dennis~C. Runde.
+\newblock {\em A Survey of Mathematics with Applications}.
+\newblock Pearson, 2016.
+
+\bibitem{Kahan2004}
+William Kahan.
+\newblock A logarithm too clever by half.
+\newblock 2004.
+
+\bibitem{muller2005}
+Jean-Michel Muller.
+\newblock On the definition of ulp(x).
+\newblock {\em CNRS -- Laboratoire LIP, projet Arenaire}, 2005.
+
+\bibitem{ruggiero1998calculo}
+M{\'a}rcia Aparecida~Gomes Ruggiero and Vera~L{\'u}cia da~Rocha~Lopes.
+\newblock {\em C{\'a}lculo num{\'e}rico: aspectos te{\'o}ricos e
+  computacionais}.
+\newblock Pearson/Makron, Sao Paulo, 1998.
+
+\bibitem{IEEE754}
+IEEE~Computer Society.
+\newblock {\em IEEE Standard for Floating-Point Arithmetic}, 2019.
+
+\end{thebibliography}
