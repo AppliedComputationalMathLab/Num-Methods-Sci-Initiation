@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  22 AUG 2026 18:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  22 AUG 2026 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,7 +352,7 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 ) (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported on input line 8.
+(babel)             Reported on input line 15.
 )
 \openout1 = `ulps_errors_visual_analisys.aux'.
 
@@ -440,28 +440,24 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 <figs/ulp_generic.png, id=4, 1725.8076pt x 631.6398pt>
 File: figs/ulp_generic.png Graphic file (type png)
 <use figs/ulp_generic.png>
-Package pdftex.def Info: figs/ulp_generic.png  used on input line 209.
+Package pdftex.def Info: figs/ulp_generic.png  used on input line 169.
 (pdftex.def)             Requested size: 1059.08852pt x 387.63213pt.
 <figs/NumError1.pdf, id=5, 815.6577pt x 302.71066pt>
 File: figs/NumError1.pdf Graphic file (type pdf)
 <use figs/NumError1.pdf>
-Package pdftex.def Info: figs/NumError1.pdf  used on input line 245.
+Package pdftex.def Info: figs/NumError1.pdf  used on input line 189.
 (pdftex.def)             Requested size: 847.27403pt x 314.456pt.
 
-Overfull \hbox (38.61299pt too wide) in paragraph at lines 267--272
+Overfull \hbox (36.94101pt too wide) in paragraph at lines 210--213
  [] 
  []
 
-[1
+(f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.bbl) [1
 
 
 Non-PDF special ignored!
 <special> papersize=83.96cm,118.82cm
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./figs/CNMAC_2026-logo.png> <./figs/Logo_CEFET-MG.png> <./figs/ulp_generic.png> <./figs/NumError1.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 332.
- (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.bbl) [2] (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.aux)
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./figs/CNMAC_2026-logo.png> <./figs/Logo_CEFET-MG.png> <./figs/ulp_generic.png> <./figs/NumError1.pdf>] (f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -473,17 +469,17 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 6715 strings out of 467870
- 118140 string characters out of 5418355
- 567414 words of memory out of 5000000
- 35486 multiletter control sequences out of 15000+600000
- 661896 words of font info for 129 fonts, out of 8000000 for 9000
+ 6690 strings out of 467870
+ 117699 string characters out of 5418355
+ 603825 words of memory out of 5000000
+ 35463 multiletter control sequences out of 15000+600000
+ 663211 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,14n,84p,640b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.pdf" (2 pages, 445473 bytes).
+ 57i,14n,84p,593b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.pdf" (1 page, 450147 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
