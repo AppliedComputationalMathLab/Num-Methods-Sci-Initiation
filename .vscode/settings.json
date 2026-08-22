@@ -60,7 +60,7 @@
   "redhat.telemetry.enabled": true,
   "explorer.confirmDelete": false,
   "python.defaultInterpreterPath": "C:\\Users\\maria\\AppData\\Local\\Microsoft\\WindowsApps\\python3.7.exe",
-  "workbench.colorTheme": "Bearded Theme Oceanic Reversed",
+  "workbench.colorTheme": "Dark 2026",
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
