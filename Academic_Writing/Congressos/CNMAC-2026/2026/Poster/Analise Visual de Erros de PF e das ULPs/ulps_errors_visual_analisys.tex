@@ -44,13 +44,11 @@
 \usepackage{wrapfig} % Allows wrapping text around tables and figures
 \usepackage{setspace}
 \usepackage{float}
-\usepackag{indentfirst}
 
 \DeclareMathOperator{\ulp}{ULP}
 \DeclareMathOperator{\fl}{\textit{fl}}
 
 \begin{document}
-\indentfirst
 \onehalfspacing
 %----------------------------------------------------------------------------------------
 %	POSTER HEADER 
@@ -75,7 +73,7 @@
     \huge \textbf{Enzo Rocha Leite Diniz Ribas$^{1}$, D'Afonseca, L. A.$^{2}$, Rocha, L. M.$^{3}$}\\
     [0cm]
     \huge Centro Federal de Educação Tecnológica de Minas Gerais, MG, Brasil\\[0.4cm]
-    \Large \texttt{enzorochaleitedinizribas@gmail.com$^{1}$, luis.dafonseca@gmail.com$^{2}$, lucasmartinsrocha@gmail.com$^{3}$}\\ 
+    \Large \texttt{enzorochaleitedinizribas@gmail.com$^{1}$, luis.dafonseca@gmail.com$^{2}$, lucasmartinsrocha@gmail.com$^{3}$}\\
   \end{center}
 \end{minipage}
 %
@@ -161,10 +159,10 @@
     \vspace{-2.5cm}
 
     Para analisar o comportamento das ULP's, foram realizados experimentos
-    computacionais utilizando funções da forma $g(x,\ell) = x^{10} + \ell - x^{10}$,
-    cujo valor exato é constante e igual a $\ell$. Pela natureza binária do sistema
-    de ponto flutuante, analisar diferentes potências de base $2$ para $\ell$
-    revela um boa visualização da grandeza da $\ulp(x)$ conforme x cresce.
+    computacionais utilizando funções da forma $g(x,\ell) = x^{10} + \ell -
+      x^{10}$, cujo valor exato é constante e igual a $\ell$. Pela natureza binária
+    do sistema de ponto flutuante, analisar diferentes potências de base $2$ para
+    $\ell$ revela um boa visualização da grandeza da $\ulp(x)$ conforme x cresce.
 
     \begin{figure}[H]
       \centering
@@ -177,11 +175,14 @@
 
     Ao avaliar $g$ para diferentes valores de $\ell$, usando ponto flutuante,
     obtemos o gráfico da a $\ulp(x)$, ilustrado na Figura~\ref{fig:ulp_generic}, em
-    que o valor esperado $g(x,\ell) = \ell$ é exibido apenas até um certo $x_{1}$, e a
-    partir de um $x_{2} > x_{1}$ a função assume o valor zero. Entretanto, no intervalo intermediário $[x_{1},x_{2}]$ é observado uma oscilação aparentemente surpreendente, que tem amplitude igual a $\ulp(x^{10}) = 2\ell$.
+    que o valor esperado $g(x,\ell) = \ell$ é exibido apenas até um certo $x_{1}$,
+    e a partir de um $x_{2} > x_{1}$ a função assume o valor zero. Entretanto, no
+    intervalo intermediário $[x_{1},x_{2}]$ é observado uma oscilação aparentemente
+    surpreendente, que tem amplitude igual a $\ulp(x^{10}) = 2\ell$.
 
-    Considere a função $f(x) = g(x,1)$. O
-    intervalo de oscilação é de aproximadamente $[39, 43]$ e a amplitude é $2\ell = 2$. Como observado no gráfico da Figura~\ref{fig:erros1}. 
+    Considere a função $f(x) = g(x,1)$. O intervalo de oscilação é de
+    aproximadamente $[39, 43]$ e a amplitude é $2\ell = 2$. Como observado no
+    gráfico da Figura~\ref{fig:erros1}.
 
     \begin{figure}[H]
       \centering
@@ -194,10 +195,10 @@
     expressão avalia para $x^{10} =
       \textbf{17.491.254.479.245.335,8346502201}$
 
-    Devido às limitações física do sistema, $x$ não possui representação
-    exata. O cálculo computacional inicia-se com a aproximação $\fl(x) \approx
-      42,10000000000000142\cdots$ Elevando este valor à décima potência, obtemos o valor
-    flutuante $A$:
+    Devido às limitações física do sistema, $x$ não possui representação exata. O
+    cálculo computacional inicia-se com a aproximação $\fl(x) \approx
+      42,10000000000000142\cdots$ Elevando este valor à décima potência, obtemos o
+    valor flutuante $A$:
     \begin{equation*}
       A = \fl\left( (\fl(x))^{10} \right) = 17.491.254.479.245.342
     \end{equation*}
@@ -214,7 +215,8 @@
     ($17.491.254.479.245.343$) cai exatamente no meio de dois números de exatamente
     representáveis. O padrão IEEE 754 resolve esta ambiguidade utilizando a regra
     \textbf{\textit{Round to Nearest, Ties to Even}} (arredondar para o mais
-    próximo; em caso de empate, para o par, onde o bit mais a direita, chamado de \textit{Least Significant Bit (LSB)} é nulo).
+    próximo; em caso de empate, para o par, onde o bit mais a direita, chamado de
+    \textit{Least Significant Bit (LSB)} é nulo).
 
     Analisando os dois candidatos à representação de $B$ em binário, suprimindo o
     início para focar no final da mantissa temos:
@@ -223,9 +225,8 @@
       \text{Opção 2 - } (A+\ulp(A)) & : \mathtt{[\dots] 0100 \ 1010 \ 1000 \ 000\mathbf{1 \ 0000}_2}
     \end{align*}
 
-    Como LSB da segunda opção é \texttt{0} (par), o
-    sistema desempata arredondando para este valor. Logo, $\fl(B) =
-      17.491.254.479.245.\textbf{344} = A + 2$.
+    Como LSB da segunda opção é \texttt{0} (par), o sistema desempata arredondando
+    para este valor. Logo, $\fl(B) = 17.491.254.479.245.\textbf{344} = A + 2$.
 
     Por fim, ao subtrair o termo $x^{10}$ previamente calculado, temos a resolução
     final em máquina:
