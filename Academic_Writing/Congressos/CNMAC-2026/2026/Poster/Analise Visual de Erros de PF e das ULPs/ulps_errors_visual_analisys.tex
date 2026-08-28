@@ -47,6 +47,9 @@
 
 \DeclareMathOperator{\ulp}{ULP}
 \DeclareMathOperator{\fl}{\textit{fl}}
+\usepackage{indentfirst}       
+\setlength{\parindent}{2.5cm}
+\makeatletter \let\@afterindentfalse\@afterindenttrue \makeatother
 
 \begin{document}
 \onehalfspacing
@@ -95,8 +98,12 @@
   \end{center}
   \color{Black}
   \vspace{-1cm}
-  \begin{justify}
-    Frequentemente, computadores realizam cálculos numéricos complexos que estão sujeitos a erros de arredondamento devido à quantidade finita de bits na representação computacional de números reais. Essa limitação agrava-se com o aumento da magnitude dos números, pois o espaçamento entre valores representáveis, a \textit{Unit in the Last Place} (ULP), também cresce.
+  \begin{justify}\setlength{\parindent}{5ex} \indent \par
+    Frequentemente, computadores realizam cálculos numéricos complexos que estão
+    sujeitos a erros de arredondamento devido à quantidade finita de bits na
+    representação computacional de números reais. Essa limitação agrava-se com o
+    aumento da magnitude dos números, pois o espaçamento entre valores
+    representáveis, a \textit{Unit in the Last Place} (ULP), também cresce.
 
     Neste trabalho, investiga-se, por meio de experimentos computacionais, os
     efeitos da representação em ponto flutuante sobre funções matematicamente
@@ -117,8 +124,7 @@
 
   \vspace{-1cm}
 
-  \begin{justify}
-
+  \begin{justify}\setlength{\parindent}{5ex} \indent \par
     Um Sistema de Ponto Flutuante (SPF) é a maneira utilizada para aproximar
     números reais pelos computadores através de representações binárias compactas.
     Para a maioria dos computadores atuais, o padrão adotado é o definido pela
@@ -138,7 +144,7 @@
       \label{eq:spf}
     \end{equation}
 
-    A \textit{Unit of Last Place (ULP)} é a menor diferença entre dois números
+    \hspace*{2.5cm}A \textit{Unit of Last Place (ULP)} é a menor diferença entre dois números
     representáveis em ponto flutuante, ou seja, a distância entre um número e o
     próximo número representável~\cite{kahan2004,muller2005}. O conjunto de números
     exatamente representáveis se torna mais esparso quanto mais distante o número
@@ -159,10 +165,18 @@
     \vspace{-2.5cm}
 
     Para analisar o comportamento das ULP's, foram realizados experimentos
-    computacionais utilizando funções da forma $g(x,\ell) = x^{10} + \ell -
-      x^{10}$, cujo valor exato é constante e igual a $\ell$. Pela natureza binária
-    do sistema de ponto flutuante, analisar diferentes potências de base $2$ para
-    $\ell$ revela um boa visualização da grandeza da $\ulp(x)$ conforme x cresce.
+    computacionais através de funções da forma $g(x,\ell) = x^{10} + \ell -
+      x^{10}$, cujo valor exato é constante e igual ao literal $\ell$. Pela natureza
+    binária do sistema de ponto flutuante, escolher uma potência de base dois para
+    o literal $\ell$ revela um boa visualização da grandeza da $\ulp(x)$ conforme x
+    cresce.
+
+    Ao avaliar $g$ para diferentes valores de $\ell$, obtemos o gráfico da a
+    $\ulp(x)$, ilustrado na Figura~\ref{fig:ulp_generic}, em que o valor esperado
+    $g(x,\ell) = \ell$ é exibido apenas até um certo $x_{1}$, e a partir de um
+    $x_{2} > x_{1}$ a função assume o valor zero. Entretanto, no intervalo
+    intermediário $[x_{1},x_{2}]$ é observado uma oscilação aparentemente
+    surpreendente, cuja amplitude equivale a $\ulp(x^{10}) = 2\ell$.
 
     \begin{figure}[H]
       \centering
@@ -173,16 +187,10 @@
       \label{fig:ulp_generic}
     \end{figure}
 
-    Ao avaliar $g$ para diferentes valores de $\ell$, usando ponto flutuante,
-    obtemos o gráfico da a $\ulp(x)$, ilustrado na Figura~\ref{fig:ulp_generic}, em
-    que o valor esperado $g(x,\ell) = \ell$ é exibido apenas até um certo $x_{1}$,
-    e a partir de um $x_{2} > x_{1}$ a função assume o valor zero. Entretanto, no
-    intervalo intermediário $[x_{1},x_{2}]$ é observado uma oscilação aparentemente
-    surpreendente, que tem amplitude igual a $\ulp(x^{10}) = 2\ell$.
-
-    Considere a função $f(x) = g(x,1)$. O intervalo no qual ocorre a oscilação é
-    aproximadamente $[39, 43]$ com uma amplitude de $2\ell = 2$, como observado no
-    gráfico da Figura~\ref{fig:erros1}.
+    Vamos analisar, a seguir, um caso particular desse fenômeno. Considere a função
+    $f(x) = g(x,1)$. O intervalo no qual ocorre a oscilação é aproximadamente $[39,
+          43]$ com uma amplitude de $2\ell = 2$, como observado no gráfico da
+    Figura~\ref{fig:erros1}.
 
     \begin{figure}[H]
       \centering
@@ -191,14 +199,13 @@
       \caption{{\small Resultado da avaliação da função $f(x) = x^{10} + 1 - x^{10}$ num SPF IEEE de 64 \text{bits}. Fonte: Autor.}}
       \label{fig:erros1}
     \end{figure}
-    Vamos analisar um exemplo em que $f(x) = 2$ para tentar compreender esse resultado inesperado. Considere $\textbf{x = 42,1}$. Na aritmética exata, a
-    expressão avalia para $x^{10} =
-      \textbf{17.491.254.479.245.335,8346502201}$
 
-    Devido às limitações física do sistema, $x$ não possui representação exata. O
-    cálculo computacional inicia-se com a aproximação $\fl(x) \approx
+    Considere o valor $\textbf{x = 42,1}$. Na aritmética exata, a expressão avalia
+    para $x^{10} = \textbf{17.491.254.479.245.335,8346502201}$. Porém, devido às
+    limitações físicas do sistema, $x$ não possui representação exata. Sendo assim,
+    o cálculo computacional inicia-se com a aproximação $\fl(x) \approx
       42,10000000000000142\cdots$. Elevando este valor à décima potência, obtemos o
-    valor flutuante $A$:
+    valor flutuante
     \begin{equation*}
       A = \fl\left( (\fl(x))^{10} \right) = 17.491.254.479.245.342
     \end{equation*}
@@ -216,7 +223,7 @@
     representáveis. O padrão IEEE 754 resolve esta ambiguidade utilizando a regra
     \textbf{\textit{Round to Nearest, Ties to Even}} (arredondar para o mais
     próximo; em caso de empate, para o par, onde o bit mais a direita, chamado de
-    \textit{Least Significant Bit (LSB)} é nulo).
+    \textit{Least Significant Bit } (LSB) é nulo).
 
     Analisando os dois candidatos à representação de $B$ em binário, suprimindo o
     início para focar no final da mantissa temos:
@@ -225,8 +232,9 @@
       \text{Opção 2 - } (A+\ulp(A)) & : \mathtt{[\dots] 0100 \ 1010 \ 1000 \ 000\mathbf{1 \ 0000}_2}
     \end{align*}
 
-    Como LSB da segunda opção é \texttt{0} (par), o sistema desempata arredondando
-    para este valor. Logo, $\fl(B) = 17.491.254.479.245.\textbf{344} = A + 2$.
+    Como o LSB da segunda opção é \texttt{0} (par), o sistema desempata
+    arredondando para este valor. Logo, $\fl(B) = 17.491.254.479.245.\textbf{344} =
+      A + 2$.
 
     Por fim, ao subtrair o termo $x^{10}$ previamente calculado, temos a resolução
     final em máquina:
@@ -249,14 +257,15 @@
   \end{center}
 
   \color{Black}
-  \vspace{-1cm}
-  \begin{justify}
-    Os experimentos computacionais conduzidos e a inspeção em baixo nível da estrutura binária provou que a anomalia
-    visualizada não tem natureza estocástica, trata-se de uma consequência
-    algorítmica e determinística das regras de arredondamento, especificamente o
-    critério \textit{Round to Nearest, Ties to Even}. O crescimento da ULP atua
-    diretamente na amplitude desses erros, transformando operações analiticamente
-    triviais em potenciais pontos de falha silenciosa no código.
+  \vspace{-2.5cm}
+  \begin{justify}\setlength{\parindent}{5ex} \indent \par
+    Os experimentos computacionais conduzidos e a inspeção em baixo nível da
+    estrutura binária provou que a anomalia visualizada não tem natureza
+    estocástica, trata-se de uma consequência algorítmica e determinística das
+    regras de arredondamento, especificamente o critério \textit{Round to Nearest,
+      Ties to Even}. O crescimento da ULP atua diretamente na amplitude desses erros,
+    transformando operações analiticamente triviais em potenciais pontos de falha
+    silenciosa no código.
 
     Como desdobramentos lógicos para trabalhos futuros, propõem-se a avaliação do
     comportamento do cancelamento utilizando arquiteturas de dados emergentes, como

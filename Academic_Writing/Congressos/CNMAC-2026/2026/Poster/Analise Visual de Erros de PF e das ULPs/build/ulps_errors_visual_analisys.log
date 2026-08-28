@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  27 AUG 2026 09:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  27 AUG 2026 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,8 +343,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box102
 \@float@everytoks=\toks33
 \@floatcapt=\box103
+) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 51.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 54.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -356,21 +358,21 @@ Package babel Info: 'portuguese' activates 'portuges' shorthands.
 )
 \openout1 = `ulps_errors_visual_analisys.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-Package ragged2e Info: ABD: executing \RaggedRight on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 54.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count321
@@ -397,62 +399,65 @@ Package caption Info: End \AtBeginDocument code.
 <figs/CNMAC_2026-logo.png, id=1, 770.88pt x 227.34938pt>
 File: figs/CNMAC_2026-logo.png Graphic file (type png)
 <use figs/CNMAC_2026-logo.png>
-Package pdftex.def Info: figs/CNMAC_2026-logo.png  used on input line 60.
+Package pdftex.def Info: figs/CNMAC_2026-logo.png  used on input line 63.
 (pdftex.def)             Requested size: 792.99524pt x 233.87065pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 61.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <29.86> not available
-(Font)              size <24.88> substituted on input line 61.
+(Font)              size <24.88> substituted on input line 64.
 
 <figs/Logo_CEFET-MG.png, id=3, 894.34125pt x 894.34125pt>
 File: figs/Logo_CEFET-MG.png Graphic file (type png)
 <use figs/Logo_CEFET-MG.png>
-Package pdftex.def Info: figs/Logo_CEFET-MG.png  used on input line 64.
+Package pdftex.def Info: figs/Logo_CEFET-MG.png  used on input line 67.
 (pdftex.def)             Requested size: 354.89748pt x 354.90533pt.
 
-Overfull \hbox (110.88176pt too wide) in paragraph at lines 59--66
+Overfull \hbox (110.88176pt too wide) in paragraph at lines 62--69
 []$[]$ $[]$  
  []
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <51.6> not available
-(Font)              size <24.88> substituted on input line 73.
+(Font)              size <24.88> substituted on input line 76.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <35.83> not available
-(Font)              size <24.88> substituted on input line 73.
+(Font)              size <24.88> substituted on input line 76.
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 76.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 79.
 (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 <figs/ulp_generic.png, id=4, 1725.8076pt x 631.6398pt>
 File: figs/ulp_generic.png Graphic file (type png)
 <use figs/ulp_generic.png>
-Package pdftex.def Info: figs/ulp_generic.png  used on input line 169.
+Package pdftex.def Info: figs/ulp_generic.png  used on input line 183.
 (pdftex.def)             Requested size: 1059.08852pt x 387.63213pt.
 <figs/NumError1.pdf, id=5, 815.6577pt x 302.71066pt>
 File: figs/NumError1.pdf Graphic file (type pdf)
 <use figs/NumError1.pdf>
-Package pdftex.def Info: figs/NumError1.pdf  used on input line 189.
+Package pdftex.def Info: figs/NumError1.pdf  used on input line 197.
 (pdftex.def)             Requested size: 847.27403pt x 314.456pt.
 
-Overfull \hbox (36.94101pt too wide) in paragraph at lines 209--212
+Overfull \hbox (36.94101pt too wide) in paragraph at lines 216--219
  [] 
  []
 
-(f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.bbl) [1
+(f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.bbl)
+Overfull \vbox (6.54985pt too high) has occurred while \output is active []
+
+ [1
 
 
 Non-PDF special ignored!
@@ -469,15 +474,15 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 6689 strings out of 467870
- 117683 string characters out of 5418355
- 603812 words of memory out of 5000000
- 35462 multiletter control sequences out of 15000+600000
+ 6708 strings out of 467870
+ 118289 string characters out of 5418355
+ 615875 words of memory out of 5000000
+ 35478 multiletter control sequences out of 15000+600000
  663211 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,14n,84p,593b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,14n,84p,514b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.pdf" (1 page, 450513 bytes).
+Output written on "f:/Users\Enzo HD\Github\Repos\ACML\Numerical_Paradigms-Research\Academic_Writing\Congressos\CNMAC-2026\2026\Poster\Analise Visual de Erros de PF e das ULPs\build\ulps_errors_visual_analisys.pdf" (1 page, 450602 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
