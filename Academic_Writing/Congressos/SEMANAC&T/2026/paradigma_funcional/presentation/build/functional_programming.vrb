@@ -1,0 +1,14 @@
+\frametitle{Newton-Raphson: perspectiva funcional}
+\begin{lstlisting}[language=Haskell]
+newtonStep f df x =
+    x - f x / df x
+\end{lstlisting}
+    Sua estrutura é:
+    \[
+        (f,f',x)\longmapsto x-\frac{f(x)}{f'(x)}.
+    \]
+    Uma iteração completa pode ser construída pela aplicação repetida de
+    \texttt{newtonStep}.
+    \begin{block}{Observação}
+        A estrutura matemática da iteração fica explícita no programa.
+    \end{block}
